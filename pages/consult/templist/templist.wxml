@@ -1,0 +1,39 @@
+<block wx:if="{{iscategory}}">
+    <view class="topbar">热门问题分类</view>
+    <import src="../template/categorylist.wxml" />
+    <block wx:for="{{categorylist}}">
+        <template is="category" data="{{item}}"/>
+    </block>
+</block>
+<block wx:if="{{ishotpro}}">
+    <view class="topbar">热门专家推荐</view>
+    <import src="../template/doctorlist.wxml" />
+    <block wx:for="{{categorylist}}">
+        <template is="doctorlist" data="{{item}}"/>
+    </block>
+</block>
+<block wx:if="{{isnewpro}}">
+    <view class="topbar">新专家推荐</view>
+    <import src="../template/doctorlist.wxml" />
+    <block wx:for="{{categorylist}}">
+        <template is="doctorlist" data="{{item}}"/>
+    </block>
+</block>
+<block wx:if="{{iscategorylist}}">
+   <view class="topbar">{{categoryname}}专家</view>
+   <import src="../template/doctorlist.wxml" />
+   <block wx:for="{{categorylist}}">
+      <template is="doctorlist" data="{{item}}"/>
+   </block>
+</block>
+<block wx:if="{{issearch}}">
+   <view class="searchbar">
+    <input type="text" bindblur="loadsearch" placeholder="搜索"/>
+   </view>
+   <view style="margin-top:80rpx;">
+    <import src="../template/doctorlist.wxml" />
+    <block wx:for="{{categorylist}}">
+        <template is="doctorlist" data="{{item}}"/>
+    </block>
+   </view>
+</block>

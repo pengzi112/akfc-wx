@@ -1,0 +1,134 @@
+.tabbox{
+  padding: 0 54rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 999;
+}
+.tablist{
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 46rpx;
+  float: left;
+  font-size: 34rpx;
+  color: #333333;
+}
+.blank{
+  height: 90rpx;
+}
+.topictitle{
+    padding:0 30rpx;
+    font-size: 36rpx;
+    color: #333333;
+    margin: 38rpx 0 26rpx;
+}
+.topiccontent{
+    padding: 0 30rpx 5rpx;
+    font-size: 26rpx;
+    color: #666666;
+    line-height: 42rpx;
+    margin-bottom: 10rpx;
+    overflow: hidden;
+ 	  text-overflow: ellipsis;
+ 	  display: -webkit-box;
+    display: box;
+  	-webkit-line-clamp: 2;
+ 	  -webkit-box-orient: vertical;  
+
+}
+.topicimgbox{
+    overflow: hidden;
+    padding: 0 19rpx;
+    position: relative;
+    margin-top: 28rpx;
+}
+.topicimg{
+    width: 220rpx;
+    height: 220rpx;
+    float: left;
+    margin: 0 10rpx;
+}
+.oneimage{
+  width: 690rpx;
+  height: 390rpx;
+}
+.playlist{
+  width: 86rpx;
+  height: 86rpx;
+  position: absolute;
+  left: 300rpx;
+  top: 150rpx;
+}
+.interact{
+  padding: 28rpx 30rpx 50rpx;
+  border-bottom: 1px solid #e1e1e1;
+}
+.interactlist{
+  height: 30rpx;
+  padding-left: 42rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #9e9e9e;
+  float: left;
+  margin-right: 24rpx;
+}
+.zan{
+  background: url(../../images/zan.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.ping{
+  background: url(../../images/ping.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.look{
+  background: url(../../images/look.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.knowledgedate{
+  height: 30rpx;
+  float:right;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #9e9e9e;
+}
+.headbox{
+  padding: 30rpx 30rpx 0;
+  overflow: hidden;
+}
+.head{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx;
+  float: left;
+}
+.doctormessage{
+  float: left;
+  margin-left: 20rpx;
+}
+.doctorname{
+  font-size: 26rpx;
+  color: #333333;
+  margin-top: 3rpx;
+}
+.hospital{
+  font-size: 26rpx;
+  color: #999999;
+  margin-top: 15rpx;
+}
+.publishtime{
+  float: right;
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 3rpx;
+}
+.saidcontent{
+  padding: 0 30rpx;
+  margin-top: 40rpx;
+  font-size: 34rpx;
+  color: #333333;
+  line-height: 52rpx;
+  font-weight: 580;
+}

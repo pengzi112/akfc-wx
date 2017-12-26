@@ -1,0 +1,37 @@
+ <swiper class="banner" autoplay="true" interval="5000" duration="1000" indicator-dots="true">
+    <swiper-item>
+        <image class="banner1" src="../../images/test.jpg" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item>
+         <image class="banner1" src="../../images/talkdetail.jpg" mode="scaleToFill"></image>
+    </swiper-item>
+    <swiper-item>
+         <image class="banner1" src="../../images/test3.jpg" mode="scaleToFill"></image>
+    </swiper-item>
+ </swiper>
+ <view class="nav">
+    <block wx:for="{{btnmessage}}" wx:key="btnmessage">
+        <view class="navbox">
+                <navigator class="btn-item btnmargin" url="{{item.url}}" wx:if="{{item.middlemark>0}}">
+                    <image src="{{item.imagesrc}}"></image>
+                </navigator>
+                <navigator class="btn-item" url="{{item.url}}" wx:else>
+                    <image src="{{item.imagesrc}}"></image>
+                </navigator>
+            <view class="btntitle">{{item.title}}</view>
+        </view>
+    </block>
+ </view>
+ <view class="paddingline"></view>
+ <view class="hottitle">热门咨询</view>
+ <block wx:for="{{hotmessage}}" wx:key="hotmessage">
+    <view class="hotlist">
+        <image class="hotimg" src="{{item.image}}" mode="aspectFill"></image>
+        <view class="hotcontent">
+            <view class="contenttitle">{{item.title}}</view>
+            <view class="contents">{{item.introdu}}</view>
+        </view>
+    </view>
+ </block>
+ <toast hidden="true">暂未开通</toast>
+ 

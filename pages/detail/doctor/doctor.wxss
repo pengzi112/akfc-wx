@@ -1,0 +1,192 @@
+.bg{
+    width: 750rpx;
+    height: 350rpx;
+    background: url(../../../images/test3.jpg) no-repeat center center;
+    background-size: cover;
+}
+.head{
+    width: 170rpx;
+    height: 170rpx;
+    position: absolute;
+    right: 30rpx;
+    top: 230rpx;
+    border-radius: 50%;
+}
+.doctorname{
+    padding-left: 30rpx;
+    font-size: 36rpx;
+    color: #333333;
+    font-weight: bold;
+    margin: 30rpx 0 24rpx 0;
+}
+.doctormessage{
+    padding-left: 30rpx;
+    overflow: hidden;
+}
+.hospital{
+    font-size: 30rpx;
+    color: #333333;
+}
+.state{
+    font-size: 30rpx;
+    color: #333333;
+    margin-left: 22rpx;
+}
+.result{
+    height: 34rpx;
+    line-height: 34rpx;
+    font-size: 26rpx;
+    color: #1b86e1;
+    margin-right: 55rpx;
+    background: url(../../../images/renzheng.png) no-repeat left center;
+    background-size: auto 100%;
+    padding-left: 42rpx;
+}
+.level{
+    width: 20rpx;
+    height: 20rpx;
+    background: url(../../../images/airstar.png) no-repeat;
+    background-size: 100% auto;
+    float: left;
+    margin: 10rpx 8rpx 0 0;
+}
+.alllevel{
+    background-image: url(../../../images/allstar.png);
+}
+.halfstar{
+    background-image: url(../../../images/halfstar.png);
+}
+.levelbox{
+    padding-left: 30rpx;
+    margin-top: 24rpx;
+}
+.consult{
+    font-size: 24rpx;
+    color: #666666;
+    line-height: 42rpx;
+    margin-bottom: 24rpx;
+}
+.title{
+    height: 80rpx;
+    background: #f9f9f9;
+    padding-left: 30rpx;
+    line-height: 80rpx;
+    font-size: 34rpx;
+    color: #333333;
+}
+.contentbox{
+    padding-bottom: 20rpx;
+}
+.content{
+    padding: 30rpx 30rpx 0;
+    font-size: 30rpx;
+    color: #333333;
+    line-height: 42rpx;
+    overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+     display: box;
+ 	-webkit-line-clamp: 3;
+ 	-webkit-box-orient: vertical;
+     background: white;
+}
+.contentpa{
+    margin-top: 20rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #34598e;
+    background: url(../../../images/zhankai.png) no-repeat 410rpx center;
+    background-size: auto 50%;
+}
+.contentsuo{
+     margin-top: 20rpx;
+    text-align: center;
+    font-size: 24rpx;
+    color: #34598e;
+    background: url(../../../images/shouqi.png) no-repeat 410rpx center;
+    background-size: auto 50%;
+}
+.topictime{
+    padding: 0 30rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #333333;
+    font-size: 24rpx;
+    border-bottom: 1px solid #f9f9f9;
+}
+.topictitle{
+    padding:0 30rpx;
+    font-size: 36rpx;
+    color: #333333;
+    margin: 38rpx 0 26rpx;
+}
+.topiccontent{
+    padding: 0 30rpx;
+    font-size: 26rpx;
+    color: #666666;
+    line-height: 42rpx;
+    margin-bottom: 10rpx;
+}
+.topicimgbox{
+    overflow: hidden;
+    padding: 0 19rpx;
+}
+.topicimg{
+    width: 220rpx;
+    height: 220rpx;
+    float: left;
+    margin: 0 10rpx;
+}
+.interact{
+  padding: 36rpx 30rpx;
+}
+.interactlist{
+  height: 30rpx;
+  padding-left: 42rpx;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #9e9e9e;
+  float: left;
+  margin-right: 24rpx;
+}
+.zan{
+  background: url(../../../images/zan.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.ping{
+  background: url(../../../images/ping.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.look{
+  background: url(../../../images/look.png) no-repeat left center;
+  background-size: auto 100%;
+}
+.knowledgedate{
+  height: 30rpx;
+  float:right;
+  font-size: 22rpx;
+  line-height: 30rpx;
+  color: #9e9e9e;
+}
+.blank{
+    height: 100rpx;
+}
+.order{
+    width: 100%;
+    height: 98rpx;
+    line-height: 98rpx;
+    text-align: center;
+    font-size: 38rpx;
+    color: #1b86e1;
+    border-top: 1px solid #c5c8c8;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: white;
+}
+.flt{
+    float: left;
+}
+.flr{
+    float: right;
+}

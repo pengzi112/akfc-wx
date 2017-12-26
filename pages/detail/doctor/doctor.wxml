@@ -1,0 +1,41 @@
+<view class="bg"></view>
+<view class="head" style="background:url({{photo}}) no-repeat center center;background-size: cover;"></view>
+<view class="doctorname">{{name}}</view>
+<view class="doctormessage">
+    <view class="flt hospital">{{hospital}}</view>
+    <view class="flt state">{{status}}</view>
+    <view class="flr result">已认证</view>
+</view>
+<view class="levelbox">
+    <block wx:key="star" wx:for="{{[1,2,3,4,5]}}" wx:for-item="itemStar">
+        <view class="level" wx:if="{{star <= index}}"></view>
+        <view class="level halfstar" wx:if="{{star > index && star < (index+0.5)}}"></view>
+        <view class="level alllevel" wx:if="{{star >= (index+0.5)}}"></view>
+    </block>
+    <view class="consult">  已咨询3</view>
+</view>
+<block wx:key="content" wx:for="{{message}}">
+    <view class="title">{{item.title}}</view>
+    <view class="contentbox">
+        <view class="content">{{item.content}}</view>
+        <view class="contentpa" hidden="true">展开</view>
+        <view class="contentsuo" hidden="true">收起</view>
+    </view>
+</block>
+<view class="title">他参与的话题</view>
+<view class="topictime">2016年11月4日 15:00</view>
+<view class="topictitle">妊娠恶阻 妊娠腹痛</view>
+<view class="topiccontent">临床常见的妊娠病有这个，那个，那个，啥个。。临床常见的妊娠病有这个，那个，那个，啥个临这</view>
+ <view class="topicimgbox">
+    <image class="topicimg" src="../../../images/test1.jpg" mode="aspectFill"></image>
+    <image class="topicimg" src="../../../images/test1.jpg" mode="aspectFill"></image>
+    <image class="topicimg" src="../../../images/test1.jpg" mode="aspectFill"></image>
+</view>
+<view class="interact">
+  <view class="interactlist zan">28</view>
+  <view class="interactlist look">28</view>
+  <view class="interactlist ping">28</view>
+  <view class="knowledgedate">2016-05-20</view>
+</view>
+<view class="blank"></view>
+<view class="order">预约咨询</view>

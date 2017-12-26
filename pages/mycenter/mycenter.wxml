@@ -1,0 +1,33 @@
+<view class="topbar">
+    <view class="mycenter">我的</view>
+</view>
+<image src="../../images/test2.jpg" class="head"></image>
+<view class="doctorname">王医生</view>
+<view class="hospital">安康市中心医院</view>
+<view class="professional">
+    <text>安康互联网医院认证专家</text>
+</view>
+<view class="professional yilianti">
+    <text>安康医联体联盟成员</text>
+</view>
+<view class="spend">
+    <view class="gold">
+        <view class="goldbox">
+            <image src="../../images/gold.png"></image>
+        </view>
+        <view class="goldtitle">金币</view>
+    </view>
+    <view class="dollar">
+        <view>
+            <image src="../../images/dollar.png"></image>
+        </view>
+        <view class="dollartitle">充值</view>
+    </view>
+</view>
+<view class="paddingline"></view>
+<view class="mylist">我发布的信息</view>
+<view class="mylist">我回复的信息</view>
+<view class="mylist">我的下载</view>
+<view class="mylist">我的收藏</view>
+<view class="mylist">帮助与反馈</view>
+

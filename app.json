@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/publishsaid/said",
+    "pages/consult/consult",
+    "pages/consult/templist/templist",
+    "pages/detail/doctor/doctor",
+    "pages/leaning/leaning",
+    "pages/message/message",
+    "pages/mycenter/mycenter"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "安康妇产医生版",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#999999",
+    "selectedColor":"#3fa7ff",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/main/main",
+      "text":"首页",
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/indexed.png"
+    },{
+      "pagePath": "pages/consult/consult",
+      "text":"咨询",
+      "iconPath": "images/consult.png",
+      "selectedIconPath": "images/consulted.png"
+    },{
+      "pagePath": "pages/message/message",
+      "text":"消息",
+      "iconPath": "images/message.png",
+      "selectedIconPath": "images/messageed.png"
+    },{
+      "pagePath": "pages/mycenter/mycenter",
+      "text":"我",
+      "iconPath": "images/me.png",
+      "selectedIconPath": "images/meed.png"
+    }]
+  }
+}

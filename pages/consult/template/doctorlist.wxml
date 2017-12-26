@@ -1,0 +1,17 @@
+ <template name="doctorlist">
+    <navigator class="doctorclass" url="../../detail/doctor/doctor?name={{item.name}}&star={{item.star}}&hospital={{item.hospital}}&photo={{item.photo}}&status={{item.appellationid}}&special={{item.specialty}}">
+        <image class="head" src="{{item.photo}}" mode="aspectFill"></image>
+        <view class="doctorbox">
+            <view class="doctorname">
+               <view class="name">{{item.name}}</view>
+               <block wx:for="{{[1,2,3,4,5]}}" wx:for-item="itemStar">
+                    <view class="level" wx:if="{{item.star <= index}}"></view>
+                    <view class="level halfstar" wx:if="{{item.star > index && item.star < (index+0.5)}}"></view>
+                    <view class="level alllevel" wx:if="{{item.star >= (index+0.5)}}"></view>
+               </block>
+            </view>
+            <view class="hospital">{{item.hospital}} {{item.appellationid}}</view>
+            <view class="goodat">擅长：{{item.specialty}}</view>
+        </view>
+    </navigator>
+</template>

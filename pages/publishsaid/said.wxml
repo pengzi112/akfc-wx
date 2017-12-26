@@ -1,0 +1,10 @@
+<view class="publish" bindtap="publish">发布</view>
+<view class="section">
+    <textarea placeholder="开始说说..."></textarea>
+</view>
+<view class="imgbox">
+    <block wx:key="saidimg" wx:for="{{saidimg}}">
+        <image class="saidimg" src="{{item}}" mode="aspectFill"></image>        
+    </block>
+</view>
+<image class="addimage" src="../../images/addphoto.png" bindtap="getphotos"></image>

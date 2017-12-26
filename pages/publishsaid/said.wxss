@@ -1,0 +1,30 @@
+.publish{
+    width: 80rpx;
+    height: 40rpx;
+    font-size: 30rpx;
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    float: right;
+    margin-right: 30rpx;
+    line-height: 40rpx;
+    border-radius: 5rpx;
+    color: #666666;
+}
+.section{
+    padding: 40rpx 30rpx 30rpx;
+}
+.addimage{
+    width: 188rpx;
+    height: 128rpx;
+    margin: 30rpx 0 0 40rpx;
+}
+.imgbox{
+    overflow: hidden;
+    padding: 0 40rpx;
+}
+.saidimg{
+    float: left;
+    width: 188rpx;
+    height: 128rpx;
+    margin-right: 20rpx;
+}

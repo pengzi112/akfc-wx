@@ -1,0 +1,98 @@
+.searchbox{
+    height: 84rpx;
+    background: #f9f9f9;
+    overflow: hidden;
+}
+.search{
+    width: 92%;
+    margin:8rpx auto 0;
+    height: 60rpx;
+    border: 1px solid #d5d3d3;
+    border-radius: 60rpx;
+    color: #cdcdcd;
+    font-size: 22rpx;
+    text-align: center;
+    line-height: 60rpx;
+    background:white url(../../images/search.png) no-repeat 96% center;
+    background-size: auto 60%;
+}
+.consultbox{
+    width: 100%;
+    height: 96rpx;
+}
+.consulttitle{
+    height: 96rpx;
+    line-height: 96rpx;
+    font-size: 36rpx;
+    color: #333333;
+    float: left;
+    margin-left: 30rpx;
+}
+.more{
+    height: 96rpx;
+    line-height: 96rpx;
+    font-size: 26rpx;
+    color: #666666;
+    float: right;
+    margin-right: 30rpx;
+    background: url(../../images/arrow.png) no-repeat right center;
+    background-size: auto 30%;
+    padding-right: 28rpx;
+}
+.hotlist{
+    padding: 0 3rpx;
+    overflow: hidden;
+}
+.navbox{
+    float: left;
+    margin-bottom: 36rpx;
+}
+.btn-item{
+    width: 110rpx;
+    height:110rpx;
+    margin:0 38rpx
+}
+.btn-item image{
+    width: 100%;
+    height:110rpx;
+}
+.btntitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 12rpx;
+    font-size: 30rpx;
+    color: #666666;
+    font-family: '微软雅黑';
+    overflow: hidden;
+}
+.hotpro{
+    overflow: hidden;
+    padding: 0 21rpx;
+}
+.probox{
+    float: left;
+    margin: 34rpx 9rpx 20rpx;
+}
+.pro-item{
+    width: 158rpx;
+    height: 158rpx;
+    overflow: hidden;
+}
+.pro-item image{
+    width: 158rpx;
+    height: 158rpx;
+    border-radius: 12rpx;
+}
+.proname{
+    width: 158rpx;
+    font-size: 30rpx;
+    color: #333333;
+    text-align: left;
+    margin: 14rpx 0 10rpx;
+}
+.hospital{
+    width: 158rpx;
+    font-size: 24rpx;
+    color: #999999;
+    text-align: left;
+}

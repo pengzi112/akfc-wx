@@ -1,0 +1,48 @@
+<view class="topbar">咨询</view>
+<view class="searchbox">
+    <view class="search" bindtap="search">搜索</view>
+</view>
+<view class="consultbox">
+    <view class="consulttitle">热门问题分类</view>
+    <view class="more" bindtap="Tocategroy">查看全部</view>
+</view>
+<view class="hotlist">
+    <block wx:for="{{category}}" wx:key="category">
+        <view class="navbox">
+            <navigator class="btn-item" url="templist/templist?id=categorylist&&categoryid={{item.categoryid}}&&name={{item.name}}">
+                <image src="{{item.img}}"></image>
+            </navigator>
+            <view class="btntitle">{{item.name}}</view>
+        </view>
+    </block>
+</view>
+<view class="consultbox">
+    <view class="consulttitle">热门专家推荐</view>
+    <view class="more" bindtap="Tohotpro">查看全部</view>
+</view>
+<view class="hotpro">
+    <block wx:for="{{hotpro}}" wx:key="hotpro">
+        <view class="probox">
+            <navigator class="pro-item" url="../detail/doctor/doctor?name={{item.name}}&star={{item.star}}&hospital={{item.hospital}}&photo={{item.photo}}&status={{item.appellationid}}&special={{item.specialty}}">
+                <image src="{{item.photo}}" mode="aspectFill"></image>
+            </navigator>
+            <view class="proname">{{item.name}}</view>
+            <view class="hospital">{{item.hospital}}</view>
+        </view>
+    </block>
+</view>
+<view class="consultbox">
+    <view class="consulttitle">新专家推荐</view>
+    <view class="more" bindtap="Tonewpro">查看全部</view>
+</view>
+<view class="hotpro">
+    <block wx:for="{{newpro}}" wx:key="newpro">
+        <view class="probox">
+            <navigator class="pro-item" url="../detail/doctor/doctor?name={{item.name}}&star={{item.star}}&hospital={{item.hospital}}&photo={{item.photo}}&status={{item.appellationid}}&special={{item.specialty}}">
+                <image src="{{item.photo}}" mode="aspectFill"></image>
+            </navigator>
+            <view class="proname">{{item.name}}</view>
+            <view class="hospital">{{item.hospital}}</view>
+        </view>
+    </block>
+</view>

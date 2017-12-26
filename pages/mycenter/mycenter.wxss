@@ -1,0 +1,91 @@
+.mycenter{
+    width:92%;
+    background:url(../../images/xiaoxi.png) no-repeat right center;
+    background-size: auto 60%;
+    margin:0 auto;
+}
+.head{
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+    margin: 30rpx 305rpx;
+}
+.doctorname{
+    text-align: center;
+    font-size: 34rpx;
+    color: #333333;
+    margin-bottom: 16rpx;
+    font-weight: bold;
+}
+.hospital{
+    text-align: center;
+    font-size: 28rpx;
+    color: #666666;
+    margin-bottom: 20rpx;
+}
+.professional{
+    text-align: center;
+}
+.professional text{
+    border:1px solid #3fa7ff;
+    border-radius: 10rpx;
+    margin:0 auto;
+    font-size: 20rpx;
+    color: #3fa7ff;
+    padding:10rpx 8rpx;
+}
+.yilianti{
+    margin: 20rpx auto 24rpx;
+}
+.spend{
+    height: 140rpx;
+    border-top: 1px solid #f9f9f9;
+}
+.spend image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.gold{
+    width: 49%;
+    float: left;
+    margin-top:20rpx;
+    border-right: 1px solid #f9f9f9;
+}
+.goldbox{
+    margin:0 auto;
+}
+.goldbox image{
+    margin-left: 172rpx;
+}
+.goldtitle{
+    font-size: 30rpx;
+    color: #333333;
+    margin:15rpx 0 0 168rpx;
+}
+.dollar{
+    width: 50%;
+    float: right;
+    margin-top: 20rpx;
+}
+.dollar image{
+   margin-left: 118rpx;
+}
+.dollartitle{
+    font-size: 30rpx;
+    color: #333333;
+    margin:15rpx 0 0 114rpx;
+}
+.paddingline{
+    height: 30rpx;
+    background: #f9f9f9;
+}
+.mylist{
+    height: 100rpx;
+    border-bottom: 1px solid #f9f9f9;
+    line-height: 100rpx;
+    margin: 0 22rpx 0 40rpx;
+    font-size: 34rpx;
+    color: #333333;
+    background: url(../../images/arrow.png) no-repeat center right;
+    background-size: auto 25%;
+}

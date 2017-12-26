@@ -1,0 +1,96 @@
+<view class="tabbox">
+  <view class="tablist" id="knowledge" style="border-bottom:{{tabborder0}};" bindtap="leaningtab">知识</view>
+  <view class="tablist" id="active" style="border-bottom:{{tabborder1}};" bindtap="leaningtab">活动</view>
+  <view class="tablist" id="disease" style="border-bottom:{{tabborder2}};" bindtap="leaningtab">病例</view>
+  <view class="tablist" id="said" style="border-bottom:{{tabborder3}};" bindtap="leaningtab">说说</view>  
+</view>
+<view class="blank"></view>
+<!--知识、活动-->
+<block wx:key="knowledge" wx:for="{{knowledge}}" wx:if="{{knowledgeshow || activeshow}}">
+  <view class="topictitle">{{item.title}}</view>
+  <view class="topiccontent">{{item.introduce}}</view>
+  <block wx:if="{{item.type == 2 || item.type == undefined }}">
+    <view class="topicimgbox" wx:if="{{item.image.length > 1 && item.placedtop != 1}}">
+      <block wx:key="knowledgeimage" wx:for="{{item.image}}" wx:for-item="imageitem">
+        <image class="topicimg" src="{{imageitem}}" mode="aspectFill"></image>
+      </block>
+    </view>
+    <view class="topicimgbox" wx:if="{{item.placedtop == 1}}">
+        <image class="oneimage" src="{{item.topimage}}" mode="aspectFill"></image>
+    </view>
+    <view class="topicimgbox" wx:if="{{item.image.length == 1 && item.placedtop != 1}}">
+      <block wx:key="knowledgeimage" wx:for="{{item.image}}" wx:for-item="imageitem">
+        <image class="oneimage" src="{{imageitem}}" mode="aspectFill"></image>
+      </block>
+    </view>
+  </block>
+  <block wx:if="{{item.type ==1 }}">
+    <view class="topicimgbox">
+        <image class="oneimage" src="{{item.cover}}" mode="aspectFill"></image>
+        <image class="playlist" src="../../images/playlist.png"></image>
+    </view>
+  </block>
+  <view class="interact">
+    <view class="interactlist zan">{{item.praisenumber}}</view>
+    <view class="interactlist look">{{item.readingnumber}}</view>
+    <view class="interactlist ping">{{item.commentnumber}}</view>
+    <view class="knowledgedate">{{item.date}}</view>
+  </view>
+</block>
+<!--病例-->
+<block wx:key="disease" wx:for="{{disease}}" wx:if="{{diseaseshow}}">
+  <view class="headbox">
+    <image class="head" src="{{item.photo}}" mode="aspectFill"></image>
+    <view class="doctormessage">
+      <view class="doctorname">{{item.name}}</view>
+      <view class="hospital">{{item.hospital}}  {{item.appellationid}}</view>
+    </view>
+    <view class="publishtime">{{item.date}}</view>
+  </view>
+  <view class="topictitle">{{item.title}}</view>
+  <view class="topiccontent">{{item.diseasehistory}}</view>
+  <view class="topicimgbox" wx:if="{{item.smallimage.length > 1}}">
+    <block wx:key="diseaseimage" wx:for="{{item.smallimage}}" wx:for-item="imageitem">
+      <image class="topicimg" src="{{imageitem}}" mode="aspectFill"></image>
+    </block>
+  </view>
+  <view class="topicimgbox" wx:if="{{item.smallimage.length == 1}}">
+      <block wx:key="knowledgeimage" wx:for="{{item.smallimage}}" wx:for-item="imageitem">
+        <image class="oneimage" src="{{imageitem}}" mode="aspectFill"></image>
+      </block>
+  </view>
+  <view class="interact">
+    <view class="interactlist zan">{{item.praisenumber}}</view>
+    <view class="interactlist look">{{item.readingnumber}}</view>
+    <view class="interactlist ping">{{item.commentnumber}}</view>
+  </view>
+</block>
+<!--说说-->
+<block wx:key="disease" wx:for="{{said}}" wx:if="{{saidshow}}">
+  <view class="headbox">
+    <image class="head" src="{{item.photo}}" mode="aspectFill"></image>
+    <view class="doctormessage">
+      <view class="doctorname">{{item.name}}</view>
+      <view class="hospital">{{item.hospital}}  {{item.appellationid}}</view>
+    </view>
+    <view class="publishtime">{{item.date}}</view>
+  </view>
+  <view class="saidcontent">{{item.content}}</view>
+  <view class="topicimgbox" wx:if="{{item.smallimage.length > 1}}">
+    <block wx:key="diseaseimage" wx:for="{{item.smallimage}}" wx:for-item="imageitem">
+      <image class="topicimg" src="{{imageitem}}" mode="aspectFill"></image>
+    </block>
+  </view>
+  <view class="topicimgbox" wx:if="{{item.smallimage.length == 1}}">
+      <block wx:key="knowledgeimage" wx:for="{{item.smallimage}}" wx:for-item="imageitem">
+        <image class="oneimage" src="{{imageitem}}" mode="aspectFill"></image>
+      </block>
+  </view>
+  <view class="interact">
+    <view class="interactlist zan">{{item.praisenumber}}</view>
+    <view class="interactlist look">{{item.readingnumber}}</view>
+    <view class="interactlist ping">{{item.commentnumber}}</view>
+  </view>
+</block>
+
+

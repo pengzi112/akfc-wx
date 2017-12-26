@@ -1,0 +1,112 @@
+.categorylist{
+    height:164rpx;
+    border-bottom:1px solid #e1e1e1;
+    padding:0 40rpx;
+}
+.categorylist image{
+    width: 110rpx;
+    height: 110rpx;
+    margin:26rpx 30rpx 0 0;
+    float: left;
+}
+.categorybox{
+    float: left;
+    width: 529rpx;
+}
+.categorytitle{
+    width: 100%;
+    font-size: 34rpx;
+    color:#1B86E1;
+    margin-top: 42rpx;
+}
+.categorycontent{
+    width: 100%;
+    font-size: 26rpx;
+    color: #999999;
+    margin-top: 20rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.doctorclass{
+    height: 240rpx;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 30rpx;
+}
+.doctorclass .head{
+    width: 160rpx;
+    height: 160rpx;
+    float: left;
+    margin:40rpx 30rpx 0 0;
+    border-radius: 160rpx;
+}
+.doctorbox{
+    float: left;
+    width: 496rpx;
+    margin-top: 44rpx;
+}
+.doctorname{
+    font-size: 34rpx;
+    color: #1b86e1;
+    overflow: hidden;
+}
+.hospital{
+    font-size:26rpx;
+    color: #666666; 
+    margin-top: 18rpx;
+}
+.goodat{
+    font-size:26rpx;
+    color: #666666;
+    line-height:36rpx;
+    margin-top: 20rpx;
+    overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+     display: box;
+ 	-webkit-line-clamp: 2;
+ 	-webkit-box-orient: vertical;  
+}
+.doctorname image{
+    width: 20rpx;
+    height: 20rpx;
+}
+.level{
+    width: 20rpx;
+    height: 20rpx;
+    background: url(../../../images/airstar.png) no-repeat;
+    background-size: 100% auto;
+    float: left;
+    margin: 10rpx 8rpx 0 0;
+}
+.doctorname .name{
+    float: left;
+    font-size: 34rpx;
+    color: #1b86e1;
+    margin-right: 8rpx;
+}
+.alllevel{
+    background-image: url(../../../images/allstar.png);
+}
+.halfstar{
+    background-image: url(../../../images/halfstar.png);
+}
+.searchbar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 80rpx;
+    border-bottom: 1px solid #999999;
+    overflow: hidden;
+    background: white;
+}
+.searchbar input{
+    width: 70%;
+    height: 40rpx;
+    border-radius: 40rpx;
+    border: 1px solid #999999;
+    margin: 10rpx auto 0;
+    font-size: 30rpx;
+    padding: 0 60rpx;
+}

@@ -1,0 +1,9 @@
+<template name="category">
+    <navigator class="categorylist" url="../templist/templist?id=categorylist&&categoryid={{item.categoryid}}&&name={{item.name}}">
+        <image src="{{item.img}}"></image>
+        <view class="categorybox">
+            <view class="categorytitle">{{item.name}}</view>
+            <view class="categorycontent">{{item.content}}</view>
+        </view>
+    </navigator>
+</template>
